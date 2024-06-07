@@ -13,6 +13,7 @@
     </header>
 
     <main>
+        @yield('log')        
     </main>
 
     <footer>

@@ -28,3 +28,11 @@ Route::get('/donna', function () {
 Route::get('/bambino', function () {
     return view('bambino');
 })->name("bambino");
+
+Route::get('/log', function () {
+    return view('log');
+})->name("log");
+
+Route::get('/register', function () {
+    return view('register');
+})->name("register");
