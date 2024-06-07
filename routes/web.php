@@ -36,3 +36,7 @@ Route::get('/log', function () {
 Route::get('/register', function () {
     return view('register');
 })->name("register");
+
+Route::get('/saldi', function () {
+    return view('saldi');
+})->name("saldi");

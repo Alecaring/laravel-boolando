@@ -11,7 +11,7 @@
             </div>
             <div>
                 <label for="password">Password</label>
-                <input type="text" id="password" placeholder="********">
+                <input type="password" id="password" placeholder="********">
             </div>
             <div class="bottom">
                 <button>Invia</button>
