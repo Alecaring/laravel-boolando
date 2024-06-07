@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     @vite('resources/js/app.js')
-    
 </head>
 <body>
-    <img src="{{ Vite::asset('resources/img/prova.webp') }}" alt="">
+
+    <header>
+        @include('partials/header')
+    </header>
+
+    <main>
+    </main>
+
+    <footer>
+        @include('partials/footer')
+    </footer>
+    
 </body>
 </html>
