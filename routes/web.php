@@ -18,15 +18,21 @@ Route::get('/', function () {
 })->name("home");
 
 Route::get('/uomo', function () {
-    return view('uomo');
+    $products = config("db.products");
+    // Per debuggare uso dd
+    // dd($products);
+    return view('uomo', compact('products'));
+    
 })->name("uomo");
 
 Route::get('/donna', function () {
-    return view('donna');
+    $products = config("db.products");
+    return view('donna', compact('products'));
 })->name("donna");
 
 Route::get('/bambino', function () {
-    return view('bambino');
+    $products = config("db.products");
+    return view('bambino', compact('products'));
 })->name("bambino");
 
 Route::get('/log', function () {
@@ -38,5 +44,6 @@ Route::get('/register', function () {
 })->name("register");
 
 Route::get('/saldi', function () {
-    return view('saldi');
+    $products = config("db.products");
+    return view('saldi', compact('products'));
 })->name("saldi");

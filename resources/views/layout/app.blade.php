@@ -16,8 +16,10 @@
 
     <main>
         @yield('log')
-        
         @yield('content')
+        <!-- <div>
+            @yield('cards')
+        </div> -->
     </main>
 
 

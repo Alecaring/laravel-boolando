@@ -5,6 +5,7 @@
             <li><a href="{{ route('uomo') }}">UOMO</a></li>
             <li><a href="{{ route('donna') }}">DONNA</a></li>
             <li><a href="{{ route('bambino') }}">BAMBINO</a></li>
+            <li><a href="{{ route('saldi') }}">OFFERTE</a></li>
         </ul>
     </div>
     <div class="logo center">

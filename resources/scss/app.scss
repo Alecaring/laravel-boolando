@@ -8,20 +8,13 @@
 }
 
 body {
-    background: rgb(63, 94, 251);
-    background: radial-gradient(circle, rgba(67, 55, 197, 0.335) 0%, rgba(255, 255, 255, 0.371) 100%);
-}
-
-img {
-    width: 50%;
-    height: 50%;
-
+    background-color: #8e8980;
 }
 
 .navbar {
     width: 100%;
     height: 10vh;
-    background-color: rgb(162, 155, 144);
+    background-color: rgb(142, 137, 128);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,12 +29,14 @@ img {
         justify-content: center;
         align-items: center;
     }
+
     .center {
         width: calc(100% / 3);
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .right {
         width: calc(100% / 3);
         display: flex;
@@ -136,7 +131,7 @@ img {
 
             label {
                 padding: 1rem .6rem;
-                font-weight: 200;
+                font-weight: 300;
 
             }
 
@@ -149,18 +144,22 @@ img {
                 flex-direction: row;
 
                 button {
-                    background-color: rgb(53, 151, 255);
+                    background-color: #979185;
                     color: white;
                     padding: .7rem 1rem;
                     margin-left: .5rem;
                     border-radius: 2rem;
                     border: .1px solid white;
+                    font-weight: 100;
+                    letter-spacing: 2px;
                 }
 
                 a {
                     text-decoration: underline;
-                    color: rgb(53, 151, 255);
+                    color: #8e8980;
                     padding-right: 1rem;
+                    font-weight: 200;
+                    letter-spacing: 1px;
                 }
             }
         }
@@ -180,7 +179,7 @@ img {
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 3px 1px 20px 7px rgb(255, 255, 255);
+            box-shadow: 3px 1px 20px 1px rgb(255, 255, 255);
 
 
             .fa-facebook-f {
@@ -215,24 +214,31 @@ img {
     width: 100%;
     height: 90vh;
 
+    svg {
+        position: absolute;
+        bottom: -7%;
+    }
+
     .banner-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     .logo-img-banner-container {
         position: absolute;
         top: 50%;
         left: 48%;
         transform: translate(-50%, -50%);
-        
+
         .logo-img-banner {
             width: 250px;
-            filter: blur(1px) brightness(0.9) contrast(1.4);;
+            filter: blur(1px) brightness(0.9) contrast(1.4);
+
         }
     }
 
-    
+
 
     .right {
         position: absolute;
@@ -249,40 +255,54 @@ img {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
+
 
             .container-item {
-                
+
                 display: block;
-                height: calc(90% / 4);
+                height: calc(80% / 4);
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
 
                 a {
                     text-decoration: none;
                     color: inherit;
                 }
-                
+
                 .donna {
+
                     background-color: rgba(215, 169, 169, 0.784);
                     color: white;
                 }
+
                 .uomo {
+
                     background-color: rgba(159, 155, 237, 0.909);
                     margin-left: 10rem;
                     color: white;
                 }
+
                 .bambino {
-                    background-color: rgb(117, 200, 200);
+
+                    background-color: rgba(117, 200, 200, 0.85);
                     margin-left: 10rem;
                     color: white;
                 }
+
                 .saldi {
+                    position: relative;
+                    z-index: 10;
                     background: #e15252c6;
                     color: white;
                 }
+
                 .buble {
                     width: 150px;
                     height: 150px;
-                    
+
                     border-radius: 50%;
                     display: block;
                     display: flex;
@@ -296,6 +316,7 @@ img {
                         -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                         animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                     }
+
                     @-webkit-keyframes shadow-inset-center {
                         0% {
                             -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -307,6 +328,7 @@ img {
                             box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
                         }
                     }
+
                     @keyframes shadow-inset-center {
                         0% {
                             -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
@@ -321,6 +343,100 @@ img {
 
                 }
             }
+        }
+    }
+}
+
+.container-sec-wave {
+    padding: 5rem;
+    background-color: rgb(142, 137, 128);
+
+
+}
+
+.container-card {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff43;
+
+
+
+
+    .cards {
+        position: relative;
+        width: calc(100% / 3 - 4rem);
+        margin: 2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-back {
+            position: absolute;
+            top: 0;
+
+            &:hover {
+                opacity: 0;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.btn-container {
+    width: 90%;
+    padding: 2.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+        border: 0;
+        background-color: #5e95dd;
+        padding: .7rem 1.3rem;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        border-radius: 2rem;
+        font-weight: 300;
+    }
+}
+
+.empty-banner {
+    width: 90%;
+    height: 80vh;
+    background-color: #ffffff43;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 50%;
+    }
+
+    .ops {
+        text-align: center;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size: 2rem;
+
+        span {
+            display: block;
+            color: white;
+            letter-spacing: 2px;
+            font-weight: 100;
+            font-size: 1.7rem;
         }
     }
 }
